@@ -1,15 +1,18 @@
 package com.company;
 
 public class Main {
-    Coordinates coordinates = new Coordinates();
+    Moves moves = new Moves();
     public static void main(String[] args) {
         Main main = new Main();
         main.game();
     }
     public void game(){
-        coordinates.setX(2);
-        coordinates.setY(9);
-        System.out.println(coordinates.getX());
-        System.out.println(coordinates.getY());
+        moves.moveForward(5);
+        moves.moveLeft(7);
+        moves.moveBackward(8);
+        moves.moveForward(2);
+        moves.moveRight(9);
+        System.out.println(moves.coordinates.getX());
+        System.out.println(moves.coordinates.getY());
     }
 }
