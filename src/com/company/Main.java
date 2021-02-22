@@ -10,10 +10,10 @@ public class Main {
     public void game(){
         int distance;
         String[] array = input.split(",", -1);
-        for(int i=0;i<array.length;i++){
-            checkDirectionAndDistance(array[i]);
+        for (String s : array) {
+            checkDirectionAndDistance(s);
         }
-
+        System.out.println("Input: "+input);
         System.out.println("The X Coordinate: "+moves.coordinates.getX());
         System.out.println("The Y Coordinate: "+moves.coordinates.getY());
         distance = Math.abs(moves.coordinates.getX())+Math.abs(moves.coordinates.getY());
@@ -26,15 +26,11 @@ public class Main {
         direction = input.substring(0,1);
         distance = input.substring(1);
         int dist = Integer.parseInt(distance);
-        switch (direction){
-            case "F": moves.moveForward(dist);
-                break;
-            case "B": moves.moveBackward(dist);
-                break;
-            case "R": moves.moveRight(dist);
-                break;
-            case "L": moves.moveLeft(dist);
-                break;
+        switch (direction) {
+            case "F" -> moves.moveForward(dist);
+            case "B" -> moves.moveBackward(dist);
+            case "R" -> moves.moveRight(dist);
+            case "L" -> moves.moveLeft(dist);
         }
     }
 }
