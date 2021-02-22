@@ -2,7 +2,7 @@
 
 How to Run the project?
 
-Download the project and open terminal in the folder
+Download the project and open terminal in the main folder
 and type the command
 
 java -jar ProjectRobot.jar
