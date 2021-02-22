@@ -6,6 +6,9 @@ import static org.junit.Assert.*;
 
 public class MovesTest {
 
+    /**
+     * To test the moveForward() method
+     */
     @Test
     public void moveForward() {
         Moves moves = new Moves();
@@ -13,6 +16,9 @@ public class MovesTest {
         assertEquals(4,moves.coordinates.getY());
     }
 
+    /**
+     * To test the moveBackward() method
+     */
     @Test
     public void moveBackward() {
         Moves moves = new Moves();
@@ -20,6 +26,9 @@ public class MovesTest {
         assertEquals(-4,moves.coordinates.getY());
     }
 
+    /**
+     * To test the moveLeft() method
+     */
     @Test
     public void moveLeft() {
         Moves moves = new Moves();
@@ -27,6 +36,9 @@ public class MovesTest {
         assertEquals(-4,moves.coordinates.getX());
     }
 
+    /**
+     * To test the moveRight() method
+     */
     @Test
     public void moveRight() {
         Moves moves = new Moves();

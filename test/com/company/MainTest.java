@@ -14,9 +14,12 @@ public class MainTest {
     public void game() {
     }
 
+    /**
+     * To test the finalPosition() method
+     */
     @Test
-    public void checkDirectionAndDistance() {
+    public void finalPosition() {
         Main main = new Main();
-        assertEquals(10,main.checkDirectionAndDistance("F10"));
+        assertEquals(10,main.finalPosition("F10"));
     }
 }
