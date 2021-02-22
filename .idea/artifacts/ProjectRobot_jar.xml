@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ProjectRobot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProjectRobot_jar</output-path>
+    <root id="archive" name="ProjectRobot.jar">
+      <element id="module-output" name="ProjectRobot" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
