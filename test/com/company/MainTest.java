@@ -16,5 +16,7 @@ public class MainTest {
 
     @Test
     public void checkDirectionAndDistance() {
+        Main main = new Main();
+        assertEquals(10,main.checkDirectionAndDistance("F10"));
     }
 }
